@@ -1,0 +1,44 @@
+.side{
+    background-color: #150c7d;
+    color: #fff;
+    
+}
+.side li{
+    color: #fff;
+    text-align:center;
+    font-family:inherit;
+}
+
+.side ul .uk-panal uk-panal-box uk-panal-box-secondary ul li a:hover{
+    background-color: #fff;
+    color:#150c7d;
+}
+
+.uk-navbar span{
+    padding-top: 30px;
+    font-size: 1.3em;
+}
+
+/*---------------- CSS FOR MOBILE ------------------
+
+@media screen and (max-width: 400px){
+  
+ .uk-navbar-left ul li{
+        font-size: 0.7em;
+        
+    }
+    
+.uk-navbar-left ul li a{
+        font-size: 0.7em;
+        
+    }
+    
+ .uk-navbar-right ul li{
+        font-size: 0.9em;
+        
+    }
+    
+}
+*/
+
+

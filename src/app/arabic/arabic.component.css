@@ -1,0 +1,48 @@
+.body{
+    margin: 0 auto;
+    background-image: url('/assets/images/write.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    background-attachment: fixed;
+    
+}
+
+.card{
+    background: #fff;
+    display:block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:100px;
+    margin-right: 100px;
+    padding-bottom: 100px;
+    width: 75%;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,5);
+    border-radius: 20px;
+   /* opacity: 0.5;
+    filter: alpha(opacity =50) */
+}
+
+.card label{
+    color: #000;
+    float: right; 
+    font-weight:bold
+}
+
+.card input{
+    color: black;
+}
+
+/*---------------- CSS FOR MOBILE 6------------------*/
+
+@media screen and (max-width: 850px){
+    
+.card{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+    
+    
+}

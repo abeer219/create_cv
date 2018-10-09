@@ -1,0 +1,191 @@
+<div class="body">
+    
+ <!--<div class="text"></div> -->
+    
+<div class="card">
+    
+
+<form class="uk-form-horizontal uk-padding" style="direction: ltr" >
+
+<!---------------------------------- name ----------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Name :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" placeholder="name" type="text"  name="name" [(ngModel)]="data.name">
+        </div>
+    </div>
+    
+<!---------------------------------- Birth Date ------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Birth Date :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="birth date" name="birthDate" [(ngModel)]="data.birthDate">
+        </div>
+    </div>
+    
+<!---------------------------------- Gender ------------------------------------->
+
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-select">Gender :</label>
+        <div class="uk-form-controls">
+            <select class="uk-select" id="form-horizontal-select" placeholder="gender" name="gender" [(ngModel)]="data.gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+    </div>
+    
+<!---------------------------------- Address ------------------------------------->
+
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Address :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="address" name="address" [(ngModel)]="data.address">
+        </div>
+    </div> 
+    
+<!---------------------------------- Phone Number ---------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Phone Number :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="phone number" name="phoneNumber" [(ngModel)]="data.phoneNumber">
+        </div>
+    </div>
+
+<!------------------------------------ Email ------------------------------------->
+
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Email :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="email" name="email" [(ngModel)]="data.email">
+        </div>
+    </div>
+    
+<!------------------------------------ College ------------------------------------->
+ 
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">College :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="college" name="college" [(ngModel)]="data.college">
+        </div>
+    </div>
+    
+<!------------------------------------ Department ----------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Department :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="department" name="department" [(ngModel)]="data.department">
+        </div>
+    </div>
+    
+<!---------------------------------- Graduation Date -------------------------------->
+
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Graduation Date :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="graduation date" name="graduationDate" [(ngModel)]="data.graduationDate">
+        </div>
+    </div>
+    
+<!---------------------------------- Name Of University ----------------------------->
+
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Name Of University :</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="name of university" name="nameOfUniversity" [(ngModel)]="data.nameOfUniversity">
+        </div>
+    </div>
+    
+<!------------------------------------- Language ---------------------------------->
+
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Language :</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Language1" name="Language1" [(ngModel)]="data.Language1">
+                
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Language2" name="Language2" [(ngModel)]="data.Language2">
+            </div>
+    </div>
+    
+<!----------------------------------- Work Experience ------------------------------->
+    
+        <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Work Experience :</label>
+            <div class="uk-form-controls">
+                <textarea class="uk-textarea" rows="5" placeholder="experience1" name="experience1" [(ngModel)]="data.experience1"></textarea>
+                
+                <label class="uk-form-label uk-margin" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Date :</label>
+                
+                <input class="uk-input uk-form-width-small uk-margin" type="text" placeholder="date" name="date1" [(ngModel)]="data.date1">
+            </div>
+            <div class="uk-form-controls">
+                <textarea class="uk-textarea" rows="5" placeholder="experience2" name="experience2" [(ngModel)]="data.experience2"></textarea>
+                
+                <label class="uk-form-label uk-margin" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Date :</label>
+                
+                <input class="uk-input uk-form-width-small uk-margin" type="text" placeholder="date" name="date2" [(ngModel)]="data.date2">
+            </div>
+            <div class="uk-form-controls">
+                <textarea class="uk-textarea" rows="5" placeholder="experience3" name="experience3" [(ngModel)]="data.experience3"></textarea>
+                
+                <label class="uk-form-label uk-margin" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Date :</label>
+                
+                <input class="uk-input uk-form-width-small uk-margin" type="text" placeholder="date" name="date3" [(ngModel)]="data.date3">
+            </div>
+    </div>
+    
+<!------------------------------------- Courses ------------------------------------>
+    
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Courses :</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="courses" name="course1" [(ngModel)]="data.course1">
+                
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="courses" name="course2" [(ngModel)]="data.course2">
+                
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="courses" name="course3" [(ngModel)]="data.course3">
+            </div>
+    </div>
+    
+<!----------------------------------- Computer Skills ------------------------------->
+
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Computer Skills :</label>
+          <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="computer skill" name="computerSkill1" [(ngModel)]="data.computerSkill1">
+                
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="computer skill" name="computerSkill2" [(ngModel)]="data.computerSkill2">
+                
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="computer skill" name="computerSkill3" [(ngModel)]="data.computerSkill3">
+            </div>
+    </div>
+    
+<!----------------------------------- Other Skills ------------------------------->
+    
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold;float: left;color: #000" for="form-horizontal-text">Other Skills :</label>
+         <div class="uk-form-controls">
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Other skill" name="otherSkill1" [(ngModel)]="data.otherSkill1">
+                
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Other skill" name="otherSkill2" [(ngModel)]="data.otherSkill2">
+                
+                <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Other skill" name="otherSkill3" [(ngModel)]="data.otherSkill3">
+            </div>
+    </div>
+    
+<!----------------------------------- end cv ------------------------------->
+    
+     <button class="uk-button" style="font-weight: bold;float: right ; margin-right: 70px; margin-bottom: 50px; background-color: #150c7d; color: #fff;border: 2px solid #150c7d;box-shadow: 0 8px 10px rgba(0,0,0,5);border-radius: 5px" (click)="insertData()">Create cv</button>
+
+
+    </form>
+   
+    </div>
+    
+       </div>
+
+    

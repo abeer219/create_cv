@@ -1,0 +1,58 @@
+#content2{
+    padding: 50px;
+    margin: 0 auto;
+}
+
+#content2 ul li{
+   list-style: none;
+   color: #0f0101;
+   font-family: 'DroidArabicKufiRegular'; 
+   font-weight: normal; 
+   font-style: normal;
+   font-size: 1.5em;
+}
+
+/*---------------- CSS FOR MOBILE ------------------ */
+
+@media screen and (max-width: 550px){
+    
+ #content2 .uk-padding .uk-card-body ul li{
+    
+     padding: 20px;
+}
+    
+    
+}
+
+@media screen and (max-width: 500px){
+    
+ #content2 .uk-padding .uk-card-body ul li{
+    
+     font-size: 0.9em;
+     padding: 15px;
+}
+    
+    
+}
+
+@media screen and (max-width: 380px){
+    
+ #content2 {
+    
+     font-size: 0.7em;
+     padding: 15px;
+}
+    
+    
+}
+
+@media screen and (max-width: 340px){
+    
+ #content2 {
+    
+     font-size: 0.5em;
+     padding: 10px;
+}
+    
+    
+} 

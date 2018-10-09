@@ -1,0 +1,195 @@
+<div class="body">
+    
+<div class="card">
+
+<form class="uk-form-horizontal uk-margin-large uk-padding" style="margin:50px 50px" >
+
+<!----------------------------------- الاسم -------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="float: right; font-weight:bold" for="form-horizontal-text"> : الأسم</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="الاسم" name="name" [(ngModel)]="information.name">
+        </div>
+    </div>
+
+<!----------------------------------- تارخ الميلاد -------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="float: right; font-weight:bold" for="form-horizontal-text"> : تاريخ الميلاد</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="تاريخ الميلاد" name="birthDate" [(ngModel)]="information.birthDate">
+        </div>
+    </div>
+
+<!----------------------------------- الجنس -------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="float: right; font-weight:bold" for="form-horizontal-text"> : الجنس</label>
+        <div class="uk-form-controls">
+            <select class="uk-select" style="text-align: right" id="form-horizontal-select" placeholder="الجنس" name="gender" [(ngModel)]="information.gender">
+                <option>ذكر</option>
+                <option>انثى</option>
+            </select>
+        </div>
+    </div>
+
+<!----------------------------------- العنوان -------------------------------------->
+    
+  <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : العنوان</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="العنوان" name="address" [(ngModel)]="information.address">
+        </div>
+    </div> 
+
+<!----------------------------------- رقم الهاتف -------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : رقم الهاتف</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="رقم الهاتف" name="phoneNumber" [(ngModel)]="information.phoneNumber">
+        </div>
+    </div>
+
+<!----------------------------------- البريد الالكتروني ------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text">: البريد الالكتروني</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="البريد الالكتروني" name="email" [(ngModel)]="information.email">
+        </div>
+    </div>
+
+<!----------------------------------- الكلية -------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : الكلية</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="الكلية" name="college" [(ngModel)]="information.college">
+        </div>
+    </div>
+
+<!----------------------------------- القسم -------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : القسم</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="القسم" name="department" [(ngModel)]="information.department">
+        </div>
+    </div>
+
+<!---------------------------------- تاريخ التخرج ------------------------------------>    
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : تاريخ التخرج</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="تاريخ التخرج" name="graduationDate" [(ngModel)]="information.graduationDate">
+        </div>
+    </div>
+
+<!----------------------------------- جهة التخرج -------------------------------------->
+    
+    <div class="uk-margin">
+        <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : جهة التخرج</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="جهة التخرج" name="nameOfUniversity" [(ngModel)]="information.nameOfUniversity">
+        </div>
+    </div>
+
+<!----------------------------------- اللغات -------------------------------------->
+    
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : اللغات</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="اللغة 1" name="Language1" [(ngModel)]="information.Language1">
+                
+                <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="اللغة 2" name="Language2" [(ngModel)]="information.Language2">
+                
+            </div>
+        </div>
+    
+<!----------------------------------- الخبرات -------------------------------------->
+    
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : الخبرات</label>
+        
+            <div class="uk-form-controls">
+                <textarea class="uk-textarea" style="text-align: right" rows="5" placeholder="الخبرات" name="experience1" [(ngModel)]="information.experience1"></textarea>
+                
+                <label class="uk-form-label uk-margin" style="font-weight:bold;text-align: right;color: #000" for="form-horizontal-text">: التاريخ </label>
+                
+                <input class="uk-input uk-form-width-small uk-margin" style="text-align: right" type="text" placeholder="التاريخ" name="date1" [(ngModel)]="information.date1">
+                
+            </div>
+            
+            <div class="uk-form-controls">
+                <textarea class="uk-textarea" style="text-align: right" rows="5" placeholder=" " name="experience2" [(ngModel)]="information.experience2"></textarea>
+                
+                <label class="uk-form-label uk-margin" style="font-weight:bold;text-align: right;color: #000" for="form-horizontal-text">: التاريخ  </label>
+                
+                <input class="uk-input uk-form-width-small uk-margin" style="text-align: right" type="text" placeholder="التاريخ" name="date2" [(ngModel)]="information.date2">
+                
+            </div>
+        
+            <div class="uk-form-controls">
+                <textarea class="uk-textarea" style="text-align: right" rows="5" placeholder=" " name="experience3" [(ngModel)]="information.experience3"></textarea>
+                
+                <label class="uk-form-label uk-margin" style="font-weight:bold;text-align: right;color: #000" for="form-horizontal-text">: التاريخ </label>
+                
+                <input class="uk-input uk-form-width-small uk-margin" style="text-align: right" type="text" placeholder="التاريخ" name="date3" [(ngModel)]="information.date3">
+                
+            </div>
+        
+        </div>
+    
+<!----------------------------------- الدورات -------------------------------------->
+    
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : الدورات</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="الدورات" name="course1" [(ngModel)]="information.course1">
+                
+                <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="" name="course2" [(ngModel)]="information.course2">
+                
+                <input class="uk-input" style="text-align: right" id="form-horizontal-text" type="text" placeholder="" name="course3" [(ngModel)]="information.course3">
+            </div>
+        </div>
+    
+<!----------------------------------- مهارات الحاسوب ------------------------------------>
+
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : مهارات الحاسوب</label>
+            <div class="uk-form-controls">
+                
+            <input class="uk-input" id="form-horizontal-text"  style="text-align: right"  type="text" placeholder="مهارات الحاسوب" name="computerSkill1" [(ngModel)]="information.computerSkill1">
+                
+             <input class="uk-input" id="form-horizontal-text" style="text-align: right" type="text" placeholder="" name="computerSkill2" [(ngModel)]="information.computerSkill2">
+                
+             <input class="uk-input" id="form-horizontal-text" style="text-align: right" type="text" placeholder="" name="computerSkill3" [(ngModel)]="information.computerSkill3">
+    </div>
+    </div>
+
+<!----------------------------------- المهارات الاخرى ------------------------------------>
+    
+    <div class="uk-margin">
+            <label class="uk-form-label" style="font-weight:bold" for="form-horizontal-text"> : المهارات الاخرى</label>
+            <div class="uk-form-controls">
+                
+             <input class="uk-input" id="form-horizontal-text"  style="text-align: right"  type="text" placeholder="المهارات الاخرى" name="otherSkill1" [(ngModel)]="information.otherSkill1">
+                
+            <input class="uk-input" id="form-horizontal-text" style="text-align: right" type="text" placeholder="" name="otherSkill2" [(ngModel)]="information.otherSkill2">
+                
+            <input class="uk-input" id="form-horizontal-text" style="text-align: right" type="text" placeholder="" name="otherSkill3" [(ngModel)]="information.otherSkill3">
+                
+    </div>
+    </div>
+
+    </form>
+
+    <button class="uk-button" style="float:left;margin-left:70px;margin-bottom: 50px; background-color: #150c7d; color:aliceblue;border: 2px solid #150c7d;
+    box-shadow: 0 8px 10px rgba(0,0,0,5);
+    border-radius: 5px" (click)="insertinformation()">Create cv</button>
+
+    </div>
+</div>

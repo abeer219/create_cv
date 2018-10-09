@@ -1,0 +1,38 @@
+.body{
+    margin: 0 auto;
+    background-image: url('/assets/images/write.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-attachment: fixed;
+}
+
+.text h1{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-bottom: 50%;
+}
+
+span{
+    color: #ffd700;
+}
+
+/*---------------- CSS FOR MOBILE ------------------*/
+
+@media screen and (max-width: 390px){
+    
+.text h1{
+    font-size: 1.5em;
+    
+}
+    
+span{
+    font-size: 1.5em;
+}
+    
+    
+}

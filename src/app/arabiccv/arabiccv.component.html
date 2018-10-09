@@ -1,0 +1,95 @@
+<div id="content2">
+
+<div  style="direction: rtl">
+         
+    <div class="uk-card-body" style="border: 10px outset black">    
+      
+
+      <ul *ngFor="let item of mycv; let i = index;let last = last">
+             
+               <div *ngIf="last === true" >
+                   
+<!---------------------------- المعلومات الشخصية ------------------------------>  
+                   
+    <li style="font-weight: bolder"> المعلومات الشخصية </li> 
+    <hr style="border-top: 1px solid black; border-width: 2px">
+                   
+            <li> الاسم : {{item.name}}</li>
+            <li> تاريخ الميلاد : {{item.birthDate}}</li>
+            <li> الجنس : {{item.gender}}</li>
+            <li> العنوان : {{item.address}}</li>
+            <li> رقم الهاتف : {{item.phoneNumber}}</li>
+            <li> البريد الالكتروني : <span style="color: #2271d8">{{item.email}}</span></li>
+                   
+<!-------------------------------- التعليم ---------------------------------> 
+                   
+    <li style= "font-weight:bolder">التعليم</li>
+    <hr style="border-top: 1px solid black; border-width: 2px">
+                   <li> الكلية : {{item.college}} </li> 
+                   <li>القسم : {{item.department}} </li>
+                   <li>سنة التخرج : {{item.graduationDate}} </li>
+                   <li>جهة التخرج : {{item.nameOfUniversity}} </li>    
+                   
+<!-------------------------------- اللغات ---------------------------------> 
+
+    <li style= "font-weight:bolder">اللغات</li>
+    <hr style="border-top: 1px solid black; border-width: 2px">
+    <li>{{item.Language1}} </li>
+    <div *ngIf="item.Language2" >
+    <li>{{item.Language2}} </li>
+    </div><br>
+                   
+<!-------------------------------- الخبرات ---------------------------------> 
+     
+     <div *ngIf="item.experience1" >               
+     <li style= "font-weight:bolder">الخبرات</li>
+     <hr style="border-top: 1px solid black; border-width: 2px">
+    <li>{{item.experience1}}  <b> {{item.date1}} </b></li></div>
+    <div *ngIf="item.experience1" >
+    <li>{{item.experience2}}  <b> {{item.date2}} </b></li></div>
+    <div *ngIf="item.experience1" >
+    <li>{{item.experience3}}  <b> {{item.date3}} </b></li></div><br> 
+                   
+<!-------------------------------- الدورات ---------------------------------> 
+    
+    <div *ngIf="item.course1" >             
+    <li style= "font-weight:bolder">الدورات</li>
+    <hr style="border-top: 1px solid black; border-width: 2px">
+        <li>{{item.course1}}</li></div>
+    <div *ngIf="item.course2" >
+        <li>{{item.course2}}</li></div>
+    <div *ngIf="item.course3" >
+        <li>{{item.course3}}</li></div><br>
+                   
+<!-------------------------------- مهارات الحاسوب ---------------------------------> 
+    
+    <div *ngIf="item.computerSkill1" >
+    <li style= "font-weight:bolder">مهارات الحاسوب</li>
+    <hr style="border-top: 1px solid black; border-width: 2px">
+        <li>{{item.computerSkill1}}</li></div>
+    <div *ngIf="item.computerSkill2" >
+        <li>{{item.computerSkill2}}</li></div>
+    <div *ngIf="item.computerSkill3" >
+        <li>{{item.computerSkill3}}</li></div><br>
+                   
+<!-------------------------------- المهارات الاخرى ---------------------------------> 
+    
+    <div *ngIf="item.otherSkill1" >
+    <li style= "font-weight:bolder">المهارات الاخرى</li>
+    <hr style="border-top: 1px solid black; border-width: 2px">
+        <li>{{item.otherSkill1}}</li></div>
+    <div *ngIf="item.otherSkill2" >
+        <li>{{item.otherSkill2}}</li></div>
+    <div *ngIf="item.otherSkill3" >
+        <li>{{item.otherSkill3}}</li></div>
+                   
+
+        </div>             
+    </ul>
+    </div>
+      </div>
+             </div>
+        
+                
+    <a ><button (click)="downloadPDF()" class="uk-button" style="float: right ; margin-right: 70px; margin-bottom: 50px; background-color: #150c7d; color:aliceblue;margin-top: 30px;box-shadow: 0 8px 10px rgba(0,0,0,5)">download pdf</button></a>
+    

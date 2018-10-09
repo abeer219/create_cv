@@ -1,0 +1,38 @@
+#content ul li{
+    list-style: none;
+    color: #0f0101;
+    font-size: 1.5em;
+}
+
+/*---------------- CSS FOR MOBILE ------------------*/
+
+@media screen and (max-width: 550px){
+    
+ #content h4{
+    
+     font-size: 0.9em;
+}
+
+ #content ul li{
+    
+     font-size: 0.9em;
+}
+    
+    
+}
+
+
+@media screen and (max-width: 450px){
+    
+ #content h4{
+    
+     font-size: 0.7em;
+}
+
+ #content ul li{
+    
+     font-size: 0.7em;
+}
+    
+    
+}

@@ -1,0 +1,106 @@
+<div id="content" >
+
+    <div class=" uk-padding">
+    
+         <div class="uk-card-body" style="border: 10px outset black">
+        
+      <ul *ngFor="let item of mycv; let i = index;let last = last">
+               <div *ngIf="last === true" >
+                   
+<!------------------ START THE PERSONAL INFORMATION ---------------->
+                   
+     <h4 style="font-weight: bold"> THE PERSONAL INFORMATION: </h4> 
+     <hr style="border-top: 1px solid black; border-width: 2px">
+            <li>Name : {{item.name}}</li>
+            <li> Birth Date : {{item.birthDate}}</li>
+            <li> Gender : {{item.gender}}</li>
+            <li> address : {{item.address}}</li>
+            <li> Phone Number : {{item.phoneNumber}}</li>
+            <li>Email : <span style="color: #2271d8">{{item.email}}</span></li>  
+                   
+ <!------------------------ START EDUCATION -----------------------> 
+                   
+       <h4 style= "font-weight:bold">EDUCATION:</h4>
+       <hr style="border-top: 1px solid black; border-width: 2px">
+                   <li> College : {{item.college}} </li> 
+                   <li>Department : {{item.department}} </li>
+                   <li>Graduation Date : {{item.graduationDate}} </li>
+                   <li>Name Of University : {{item.nameOfUniversity}} </li>
+                   
+<!------------------------ START LANGUAGES --------------------->  
+                   
+       <h4 style= "font-weight:bold">LANGUAGES:</h4>
+       <hr style="border-top: 1px solid black; border-width: 2px">
+        <li>{{item.Language1}} </li>
+    <div *ngIf="item.Language2" >
+       <li>{{item.Language2}} </li> 
+    </div>
+<!------------------------ START WORK EXPERIENCE ------------------->    
+    <br>             
+    <div *ngIf="item.experience1" >
+        <h4 style= "font-weight:bold">WORK EXPERIENCE:</h4>
+        <hr style="border-top: 1px solid black; border-width: 2px">
+        <li>{{item.experience1}} <b> {{item.date1}} </b></li>
+    </div>
+    <div *ngIf="item.experience2" >
+        <li>{{item.experience2}}   <b>{{item.date2}} </b> </li>
+    </div>
+    <div *ngIf="item.experience3" >
+        <li>{{item.experience3}}  <b>{{item.date3}} </b> </li>
+    </div>
+                   
+<!------------------------ START COURSES ------------------------>        
+     <br>           
+   <div *ngIf="item.course1" >
+        <h4 style= "font-weight:bold">COURSES:</h4>
+        <hr style="border-top: 1px solid black; border-width: 2px">
+        <li>{{item.course1}}</li>
+    </div>
+    <div *ngIf="item.course2" >
+        <li>{{item.course2}}</li>
+    </div>
+    <div *ngIf="item.course3" >
+        <li>{{item.course3}}</li>
+    </div>
+                   
+<!------------------------ START COMPUTER SKILLS ------------------->                  <br>
+    <div *ngIf="item.computerSkill1" >
+        <h4 style= "font-weight:bold">COMPUTER SKILLS:</h4>
+        <hr style="border-top: 1px solid black; border-width: 2px">
+        <li>{{item.computerSkill1}}</li>
+    </div>
+    <div *ngIf="item.computerSkill2" >
+        <li>{{item.computerSkill2}}</li>
+    </div>
+    <div *ngIf="item.computerSkill3" >
+        <li>{{item.computerSkill3}}</li>
+    </div>
+                   
+<!------------------------ START Other SKILLS --------------------->  
+   <br>               
+   <div *ngIf="item.otherSkill1" >
+        <h4 style= "font-weight:bold">Other SKILLS:</h4>
+        <hr style="border-top: 1px solid black; border-width: 2px">          
+        <li> {{item.otherSkill1}}</li>
+    </div>
+   <div *ngIf="item.otherSkill2" >
+        <li> {{item.otherSkill2}}</li>
+   </div>
+   <div *ngIf="item.otherSkill3" >
+        <li> {{item.otherSkill3}}</li>
+   </div> 
+                   
+                   
+            </div> 
+                 
+        </ul>
+     </div>
+   </div>
+</div>          
+ 
+ <!---------------------------- end cv --------------------------> 
+                
+  <a ><button (click)="downloadPDF()" class="uk-button" style="float: right ; margin-right: 70px; margin-bottom: 50px; background-color: #150c7d; color:aliceblue;margin-top: 30px;box-shadow: 0 8px 10px rgba(0,0,0,5)">download pdf</button></a>
+
+    
+ 
